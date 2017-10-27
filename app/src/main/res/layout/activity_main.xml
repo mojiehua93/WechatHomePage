@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/viewpager">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/tab_bg"
+        android:orientation="horizontal">
+
+        <com.example.mojiehua93.wechathomepage.BottomTabView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/id_tab_wechat"
+            custom:icon="@drawable/ic_menu_start_conversation"
+            custom:color="#ff45c01a"
+            android:padding="5dp"
+            custom:text="@string/app_name"
+            custom:text_size="12sp"
+            android:layout_height="match_parent"/>
+
+        <com.example.mojiehua93.wechathomepage.BottomTabView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/id_tab_contact"
+            custom:icon="@drawable/ic_menu_friendslist"
+            custom:color="#ff45c01a"
+            android:padding="5dp"
+            custom:text="@string/tab_contact"
+            custom:text_size="12sp"
+            android:layout_height="match_parent"/>
+
+        <com.example.mojiehua93.wechathomepage.BottomTabView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/id_tab_found"
+            custom:icon="@drawable/ic_menu_emoticons"
+            custom:color="#ff45c01a"
+            android:padding="5dp"
+            custom:text="@string/tab_found"
+            custom:text_size="12sp"
+            android:layout_height="match_parent"/>
+
+        <com.example.mojiehua93.wechathomepage.BottomTabView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/id_tab_me"
+            custom:icon="@drawable/ic_menu_allfriends"
+            custom:color="#ff45c01a"
+            android:padding="5dp"
+            custom:text="@string/tab_me"
+            custom:text_size="12sp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>
